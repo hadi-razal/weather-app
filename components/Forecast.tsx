@@ -22,7 +22,7 @@ const ForecastItem = ({ time, temp, icon }: any) => (
 );
 
 const Forecast = () => (
-    <div className='flex flex-col items-center w-full bg-primaryColor bg-opacity-30 p-5 gap-y-2 rounded-2xl'>
+    <div className='flex flex-col items-center lg:w-1/2 lg:h-1/2 bg-primaryColor bg-opacity-30 p-5 gap-y-2 rounded-2xl'>
         <div className='flex flex-wrap items-center justify-around w-full gap-y-2'>
             {forecastData.slice(0, 5).map((forecast, index) => (
                 <ForecastItem key={index} {...forecast} />

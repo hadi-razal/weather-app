@@ -2,8 +2,8 @@ import React from "react";
 
 const WeatherOverviewCard = () => {
   return (
-    <div className="flex items-center justify-center lg:h-[250px] lg:w-[450px] rounded-2xl p-5 bg-white bg-opacity-10 w-full">
-      <div className="flex flex-col  text-sm font-light text-center">
+    <div className="flex items-center justify-center lg:w-[80%]  lg:h-1/2 rounded-2xl p-5 w-full">
+      <div className="flex flex-col  text-sm font-light text-center w-full">
         <h1 className="text-3xl font-bold text-start pb-1">Weather Overview</h1>
         <p className="text-start">
           Experience the dynamic weather of Kochi! From sunny days perfect for
