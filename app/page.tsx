@@ -11,7 +11,7 @@ const Page: React.FC = () => {
 
 
   return (
-    <div className='relative bg-bgImageSunny bg-cover flex items-center justify-center gap-3 min-h-screen p-3'>
+    <div className='relative bg-bgImageSunny bg-cover flex items-start  justify-center lg:items-center gap-3 min-h-screen p-3'>
       <div className='absolute inset-0 bg-black bg-opacity-30 backdrop-blur-md'></div>
 
       <div className='w-full flex flex-col lg:flex-row items-center justify-center gap-3 relative z-10'>

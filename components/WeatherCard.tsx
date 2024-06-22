@@ -66,7 +66,7 @@ const WeatherCard: React.FC = () => {
 
   return (
     <div className="z-10 text-primaryFontColor flex flex-col items-center justify-center gap-1 lg:h-[450px] lg:w-[400px] w-full bg-primaryColor rounded-2xl p-6 shadow-lg">
-      <h2 className="text-2xl lg:text-3xl font-bold">Today</h2>
+      <h2 className="text-2xl lg:text-3xl font-bold">Now</h2>
       <div className="flex items-center justify-center gap-2">
         {weather?.weather && (
           <img src={getWeatherIcon(weather.weather[0].icon)} alt="Weather Icon" className="w-22 h-20" />
@@ -75,11 +75,10 @@ const WeatherCard: React.FC = () => {
       </div>
       <span className="text-md lg:text-lg font-medium">{weather?.weather[0]?.main}</span>
       <select
-        className="p-2 rounded  border-gray-300 outline-none bg-primaryColor"
+        className="rounded  border-gray-300 w-[100px] outline-none bg-primaryColor"
         onChange={handleLocationChange}
         value={selectedLocation?.name || ''}
       >
-        <option value="">Select a location</option>
         {cities.map((city: any) => (
           <option key={city.name} value={city.name}>{city.name}</option>
         ))}

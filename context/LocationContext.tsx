@@ -1,7 +1,7 @@
 "use client";
 
 import React, { createContext, useContext, useState, ReactNode, Dispatch, SetStateAction } from "react";
-import { CityCoordinates, delhi } from "@/data/locations";
+import { CityCoordinates , newYork } from "@/data/locations";
 
 interface LocationContextProps {
     selectedLocation: CityCoordinates | null;
@@ -11,7 +11,7 @@ interface LocationContextProps {
 const LocationContext = createContext<LocationContextProps | undefined>(undefined);
 
 export const LocationProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-    const [selectedLocation, setSelectedLocation] = useState<CityCoordinates | null>(delhi);
+    const [selectedLocation, setSelectedLocation] = useState<CityCoordinates | null>(newYork);
 
     return (
         <LocationContext.Provider value={{ selectedLocation, setSelectedLocation }}>
